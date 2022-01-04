@@ -1,0 +1,21 @@
+.productCard{
+    list-style: none;
+    font-size: 1.5 ren;
+
+    display: grid;
+    place-items: center;
+}
+
+.productCard:hover{
+    opacity: 0.8;
+}
+
+.productImage{
+    border-radius: 10px;   
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

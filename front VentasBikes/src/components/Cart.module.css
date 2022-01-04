@@ -1,0 +1,17 @@
+.bikesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    color: white;
+}
+
+.formaPago{
+    padding: 20%;
+    color: cornsilk;
+    height: 80vh;
+    
+    
+    place-items: center;
+}

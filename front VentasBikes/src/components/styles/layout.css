@@ -1,0 +1,89 @@
+.container__main {
+    width: 100%;
+    align-items: center;
+    flex-grow: 1;
+
+    /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+    color:beige;
+}
+
+.container__left {
+    align-items: center;
+    text-align: left;
+    width: 40%;
+}
+
+.container__sep {
+    align-items: right;
+    text-align:  center;
+    width: 15%;
+}
+
+.container__right {
+    align-items: Left;
+    text-align:  center;
+    width: 30%;
+}
+.container__middle {
+    align-items: left;
+    text-align: center;
+    flex-grow: 1;
+    width: 30%;
+}
+
+body {
+    background: url('/src/images/silhouette2.jpg') no-repeat fixed center center #333;
+    background-size: cover;
+}
+
+.imagen{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+ .imagen40{
+    padding: 5%;
+    border-radius: 10px;
+    list-style: none;
+    background-color: white
+  }
+
+  .imagen40:hover{
+    opacity: 0.8;
+  }
+
+ .imgGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(223, 219, 219);
+
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, 300px) ;
+    gap: 40px;
+    padding: 10px;
+    justify-content: center;
+    font-size: 1.5 rem;
+    text-align: center;
+    color: rgb(75, 34, 34);
+}
+
+.bikesTitle{
+    text-align: center;   
+    color:rgb(75, 34, 34);
+}
+
+a {
+    text-decoration: none;
+    color: white
+}

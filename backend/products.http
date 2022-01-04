@@ -1,0 +1,45 @@
+@hostname=http://localhost
+@port=4000
+@host={{hostname}}:{{port}}
+
+###
+GET {{host}}/products
+Content-Type: application/json
+
+###
+GET {{host}}/products/6158a758a6cb8290966772c9
+Content-Type: application/json
+
+###
+POST {{host}}/products
+Content-Type: application/json
+
+{
+    "description": "Una cámara de video mamalona",
+    "image": "https://picsum.photos/200",
+    "price": "333666444",
+    "currency": "USD",
+    "product": "Camera",
+    "quantity": "66"
+}
+
+
+
+# docker run --name some-mongo -p 27017:27017 -d mongo:tag 
+
+
+###
+PUT {{host}}/products/6161d07cf40a0eb2290f6a84
+Content-Type: application/json
+
+{
+    "description": "Una cámara de video regular porque la estoy editando",
+    "quantity": "42"
+}
+
+
+# 6158a717a6cb8290966772c7
+###
+DELETE  {{host}}/products/6158a717a6cb8290966772c7
+Content-Type: application/json
+
